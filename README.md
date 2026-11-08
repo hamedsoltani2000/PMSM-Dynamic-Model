@@ -47,24 +47,24 @@ The current derivatives are calculated using the coupled voltage equations and t
 
 The electromagnetic torque is calculated using the following expression implemented in the MATLAB function:
 
-\[
-T_e=\frac{3}{2}\frac{P}{2}
+$$
+T_e = \frac{3}{2}\frac{P}{2}
 \left[
 \Lambda_m I_{qs}
-+(L_d-L_q)I_{qs}I_{ds}
-+L_{dq}I_{qs}^{2}
--L_{qd}I_{ds}^{2}
++ (L_d-L_q)I_{qs}I_{ds}
++ L_{dq}I_{qs}^{2}
+- L_{qd}I_{ds}^{2}
 \right]
-\]
+$$
 
 ### 3. Mechanical Dynamics
 
 The mechanical dynamics are described by:
 
-\[
+$$
 J\frac{d\omega_m}{dt}
-=T_e-T_L-B\omega_m
-\]
+= T_e - T_L - B\omega_m
+$$
 
 where \(J\) is the rotor and load inertia, \(B\) is the viscous friction coefficient, and \(T_L\) is the load torque.
 
@@ -72,9 +72,9 @@ where \(J\) is the rotor and load inertia, \(B\) is the viscous friction coeffic
 
 The electrical currents and mechanical speed are updated using the Forward Euler method:
 
-\[
-x(k+1)=x(k)+T_s\dot{x}(k)
-\]
+$$
+x(k+1) = x(k) + T_s\dot{x}(k)
+$$
 
 The rotor electrical and mechanical angles are also updated using discrete-time integration.
 
