@@ -27,19 +27,19 @@ The electrical dynamics are formulated in the rotating \(dq\) reference frame, c
 
 The inductance matrix is defined as:
 
-\[
-\mathbf{L}=
+$$
+\mathbf{L} =
 \begin{bmatrix}
-L_d & L_{dq}\\
+L_d & L_{dq} \\
 L_{qd} & L_q
 \end{bmatrix}
-\]
+$$
 
 Its determinant is:
 
-\[
-\Delta_L=L_dL_q-L_{dq}L_{qd}
-\]
+$$
+\Delta_L = L_d L_q - L_{dq} L_{qd}
+$$
 
 The current derivatives are calculated using the coupled voltage equations and the inverse of the inductance matrix.
 
